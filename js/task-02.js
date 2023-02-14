@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.querySelector('ul#ingredients');
+const listIngredientsEl = document.querySelector('ul#ingredients');
 // const listIngredients = [];
 
 // ingredients.forEach((ingredient) => {
@@ -17,9 +17,10 @@ const list = document.querySelector('ul#ingredients');
 //   listIngredients.push(individualIngredient);
 // });
 
-// list.after(...listIngredients);
+// listIngredientsEl.after(...listIngredients);
 
 const markup = ingredients.map((ingredient) => 
-  `<li class="item">${ingredient}</li>`).join("");
+  `<li class="item">${ingredient}</li>`)
+  .join("");
 
-list.insertAdjacentHTML("afterend", markup);
+listIngredientsEl.insertAdjacentHTML("afterend", markup);
