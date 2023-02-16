@@ -23,6 +23,10 @@ button {
   cursor: pointer;
 }
 
-/* .gallery {
+/* .gallery-list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }  */
+

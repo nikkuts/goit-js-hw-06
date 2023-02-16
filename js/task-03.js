@@ -18,9 +18,11 @@ const listGalleryEl = document.querySelector(".gallery");
 const markup = images.map(({url, alt}) => 
   `<li> <img src='${url}' alt='${alt}' width=280px > </li>`).join("");
 
-listGalleryEl.insertAdjacentHTML("beforeend", markup);
-
 listGalleryEl.style.listStyle = 'none';
 listGalleryEl.style.display = 'flex';
-listGalleryEl.style.justifyContent = 'space-between';
+listGalleryEl.style.justifyContent = 'center';
+listGalleryEl.style.gap = '30px';
 
+// listGalleryEl.classList.add('gallery-list');
+
+listGalleryEl.insertAdjacentHTML("beforeend", markup);
